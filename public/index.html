@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Geofences</title>
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+   <meta charset="utf-8">
+   <style>
+      [class="gm-tilt"] {
+         display:none;
+      }
+
+      #map{
+         width:100%;
+         height:400px !important;
+      } 
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h2>Cadastro de geo-fences</h2>
+      <div class="col-md-8">      
+         <div id="map"></div>
+      </div>
+      <div class="col-md-4">
+         <button id="getCoordinates">Mostrar Coordenadas</button>
+         <button id="removePolygon">Remover Selecionado</button>
+         <div>
+            <ul id="info"></ul>
+         </div>
+      </div>         
+   </div>
+   <footer> 
+      <div class="container"> 
+         <p>
+            Simple NodeJS and Mongo application 
+            created by 
+            <a href="http://www.uilian.com/about" target="_blank">@uilian</a> 
+            to define exclusion polygons ("geofences").
+         </p> 
+         <p>Code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p> 
+      </div> 
+   </footer>
+   <script async defer 
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=drawing">
+   </script>
+   <script async defer 
+      src="/js/map.js">
+   </script>
+  </body>
+</html>
