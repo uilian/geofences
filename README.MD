@@ -1,4 +1,4 @@
-# Simple Geo Application
+# Geo Fences
 
 Sample NodeJS application to create geo-fences using Google Maps API.
 
