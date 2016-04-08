@@ -11,6 +11,6 @@ $ npm install
 $ node app.js
 ```
 
-Open your browser in [http://localhost:3000/][http://localhost:3000/].
+Open your browser in [http://localhost:3000/](http://localhost:3000/).
 
 That's it!
